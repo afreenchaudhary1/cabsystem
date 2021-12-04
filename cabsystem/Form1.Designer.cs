@@ -92,6 +92,7 @@ namespace cabsystem
             this.pass2txt.Name = "pass2txt";
             this.pass2txt.Size = new System.Drawing.Size(420, 27);
             this.pass2txt.TabIndex = 14;
+            this.pass2txt.UseSystemPasswordChar = true;
             // 
             // pass1txt
             // 
@@ -99,6 +100,7 @@ namespace cabsystem
             this.pass1txt.Name = "pass1txt";
             this.pass1txt.Size = new System.Drawing.Size(420, 27);
             this.pass1txt.TabIndex = 13;
+            this.pass1txt.UseSystemPasswordChar = true;
             // 
             // utxt
             // 
@@ -113,6 +115,7 @@ namespace cabsystem
             this.etxt.Name = "etxt";
             this.etxt.Size = new System.Drawing.Size(431, 27);
             this.etxt.TabIndex = 11;
+            this.etxt.Validating += new System.ComponentModel.CancelEventHandler(this.etxt_val);
             // 
             // ltxt
             // 
@@ -124,7 +127,7 @@ namespace cabsystem
             // ftxt
             // 
             this.ftxt.BackColor = System.Drawing.SystemColors.Window;
-            this.ftxt.ForeColor = System.Drawing.SystemColors.InactiveCaption;
+            this.ftxt.ForeColor = System.Drawing.SystemColors.WindowText;
             this.ftxt.Location = new System.Drawing.Point(201, 151);
             this.ftxt.Name = "ftxt";
             this.ftxt.Size = new System.Drawing.Size(210, 27);

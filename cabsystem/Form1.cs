@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
+using System.Text.RegularExpressions;
 
 namespace cabsystem
 {
@@ -21,47 +22,50 @@ namespace cabsystem
 
         private void register_Click(object sender, EventArgs e)
         {
-            
-            cn.Open();
-            if (ftxt.Text == string.Empty)
+
+            if (ftxt.Text == string.Empty || ltxt.Text == string.Empty || etxt.Text == string.Empty || pass1txt.Text == string.Empty || pass2txt.Text == string.Empty)
             {
 
-                MessageBox.Show("firstname field is required", "error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Please fill empty fields", "error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+
             }
-            if (ltxt.Text == string.Empty)
+            else if (pass1txt.Text != pass2txt.Text)
             {
 
-                MessageBox.Show("lastname field is required", "error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("password does not match ", "error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+
             }
-            if (etxt.Text == string.Empty)
+            else
             {
 
-                MessageBox.Show("email field is required", "error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
-            if (pass1txt.Text != pass2txt.Text)
-            {
-                MessageBox.Show("Password does not match", "error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
-            if (pass1txt.Text == string.Empty)
-            {
-
-                MessageBox.Show("create password field is required", "error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
-            if (pass2txt.Text == string.Empty)
-            {
-
-                MessageBox.Show("please confirm password", "error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
-            SqlCommand cmd = cn.CreateCommand();
-            cmd.CommandType = CommandType.Text;
-            cmd.CommandText = (@"insert into signup (Firstname,Lastname,Email,Username,Password  )
+                cn.Open();
+                SqlCommand cmd = cn.CreateCommand();
+                cmd.CommandType = CommandType.Text;
+                cmd.CommandText = (@"insert into signup (Firstname,Lastname,Email,Username,Password  )
                 values ('" + ftxt.Text + "','" + ltxt.Text + "','" + etxt.Text + "','" + utxt.Text + "','" + pass1txt.Text + "')");
-            cmd.ExecuteNonQuery();
-
-            cn.Close();
-            MessageBox.Show("data inserted successfully", "done", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                cmd.ExecuteNonQuery();
+                cn.Close();
+                MessageBox.Show("data inserted successfully", "done", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
         }
-        
-       
+
+        private void etxt_val(object sender, CancelEventArgs e)
+        {
+            System.Text.RegularExpressions.Regex email = new System.Text.RegularExpressions.Regex(@"^([a-zA-Z0-9_\-\.]+)@((\[[0-9]{1,3}" +
+         @"\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([a-zA-Z0-9\-]+\" +
+         @".)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$");
+            if(etxt.Text.Length > 0)
+            {
+                if (email.IsMatch(etxt.Text))
+                {
+                    MessageBox.Show("valid email", "done", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+                else
+                {
+                    MessageBox.Show("invalid email", "error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+
+        }
     }
 }
