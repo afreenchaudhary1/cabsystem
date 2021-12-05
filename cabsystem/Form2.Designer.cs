@@ -1,4 +1,5 @@
-﻿namespace cabsystem
+﻿
+namespace cabsystem
 {
     partial class Form2
     {
