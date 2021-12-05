@@ -46,6 +46,7 @@ namespace cabsystem
             this.fname = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.loginbutton = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -53,6 +54,7 @@ namespace cabsystem
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.panel1.Controls.Add(this.loginbutton);
             this.panel1.Controls.Add(this.register);
             this.panel1.Controls.Add(this.pass2txt);
             this.panel1.Controls.Add(this.pass1txt);
@@ -78,7 +80,7 @@ namespace cabsystem
             this.register.BackColor = System.Drawing.Color.DarkGoldenrod;
             this.register.Font = new System.Drawing.Font("Arial Rounded MT Bold", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.register.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.register.Location = new System.Drawing.Point(371, 454);
+            this.register.Location = new System.Drawing.Point(216, 458);
             this.register.Name = "register";
             this.register.Size = new System.Drawing.Size(195, 44);
             this.register.TabIndex = 15;
@@ -213,6 +215,18 @@ namespace cabsystem
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
+            // loginbutton
+            // 
+            this.loginbutton.BackColor = System.Drawing.Color.DarkGoldenrod;
+            this.loginbutton.Font = new System.Drawing.Font("Arial Rounded MT Bold", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.loginbutton.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.loginbutton.Location = new System.Drawing.Point(491, 458);
+            this.loginbutton.Name = "loginbutton";
+            this.loginbutton.Size = new System.Drawing.Size(195, 44);
+            this.loginbutton.TabIndex = 16;
+            this.loginbutton.Text = "Login";
+            this.loginbutton.UseVisualStyleBackColor = false;
+            // 
             // signup_page
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
@@ -249,6 +263,7 @@ namespace cabsystem
         private System.Windows.Forms.TextBox ltxt;
         private System.Windows.Forms.TextBox ftxt;
         private System.Windows.Forms.Button register;
+        private System.Windows.Forms.Button loginbutton;
     }
 }
 
