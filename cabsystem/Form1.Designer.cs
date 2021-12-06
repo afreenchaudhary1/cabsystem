@@ -1,7 +1,7 @@
 ﻿
 namespace cabsystem
 {
-    partial class signup_page
+    partial class signuppage
     {
         /// <summary>
         ///  Required designer variable.
@@ -29,7 +29,7 @@ namespace cabsystem
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(signup_page));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(signuppage));
             this.panel1 = new System.Windows.Forms.Panel();
             this.loginbtn = new System.Windows.Forms.Button();
             this.register = new System.Windows.Forms.Button();
@@ -228,7 +228,7 @@ namespace cabsystem
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
-            // signup_page
+            // signuppage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -237,7 +237,7 @@ namespace cabsystem
             this.Controls.Add(this.panel1);
             this.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "signup_page";
+            this.Name = "signuppage";
             this.Text = "Form1";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();

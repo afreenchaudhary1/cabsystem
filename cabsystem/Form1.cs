@@ -12,10 +12,13 @@ using System.Text.RegularExpressions;
 
 namespace cabsystem
 {
-    public partial class signup_page : Form
+    public partial class signuppage : Form
     {
         SqlConnection cn = new SqlConnection(@"Data Source=LAPTOP-ECN3NRD8;Initial Catalog=cab;Integrated Security=True");
-        public signup_page()
+
+        public static object Current { get; internal set; }
+
+        public signuppage()
         {
             InitializeComponent();
         }
@@ -72,7 +75,7 @@ namespace cabsystem
         {
 
             this.Hide();
-            Form2 login = new Form2();
+            loginpage login = new loginpage();
             login.ShowDialog();
         }
     }

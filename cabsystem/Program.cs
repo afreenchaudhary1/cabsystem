@@ -17,7 +17,7 @@ namespace cabsystem
             Application.SetHighDpiMode(HighDpiMode.SystemAware);
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new signup_page());
+            Application.Run(new signuppage());
         }
     }
 }

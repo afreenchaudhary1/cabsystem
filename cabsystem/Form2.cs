@@ -8,11 +8,13 @@ using System.Windows.Forms;
 
 namespace cabsystem
 {
-    public partial class Form2 : Form
+    public partial class loginpage : Form
     {
-        public Form2()
+        public loginpage()
         {
             InitializeComponent();
         }
+
+ 
     }
 }
