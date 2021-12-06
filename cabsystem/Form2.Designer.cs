@@ -82,6 +82,7 @@ namespace cabsystem
             this.loginbutton.TabIndex = 6;
             this.loginbutton.Text = "Login";
             this.loginbutton.UseVisualStyleBackColor = false;
+            this.loginbutton.Click += new System.EventHandler(this.loginbutton_Click);
             // 
             // passtxt
             // 
@@ -147,6 +148,7 @@ namespace cabsystem
             this.Controls.Add(this.panel1);
             this.Name = "loginpage";
             this.Text = "Form2";
+            this.Load += new System.EventHandler(this.loginpage_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
