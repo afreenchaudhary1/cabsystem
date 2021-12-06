@@ -54,7 +54,7 @@ namespace cabsystem
             System.Text.RegularExpressions.Regex email = new System.Text.RegularExpressions.Regex(@"^([a-zA-Z0-9_\-\.]+)@((\[[0-9]{1,3}" +
          @"\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([a-zA-Z0-9\-]+\" +
          @".)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$");
-            if (etxt.Text.Length > 0)
+            if(etxt.Text.Length > 0)
             {
                 if (email.IsMatch(etxt.Text))
                 {
@@ -66,14 +66,6 @@ namespace cabsystem
                 }
             }
 
-        }
-
-        private void loginbutton_Click(object sender, EventArgs e)
-        {
-
-            this.Hide();
-            Form2 login = new Form2();
-            login.ShowDialog();
         }
     }
 }

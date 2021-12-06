@@ -31,7 +31,6 @@ namespace cabsystem
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(signup_page));
             this.panel1 = new System.Windows.Forms.Panel();
-            this.loginbtn = new System.Windows.Forms.Button();
             this.register = new System.Windows.Forms.Button();
             this.pass2txt = new System.Windows.Forms.TextBox();
             this.pass1txt = new System.Windows.Forms.TextBox();
@@ -47,6 +46,7 @@ namespace cabsystem
             this.fname = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.loginbutton = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -54,7 +54,7 @@ namespace cabsystem
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.panel1.Controls.Add(this.loginbtn);
+            this.panel1.Controls.Add(this.loginbutton);
             this.panel1.Controls.Add(this.register);
             this.panel1.Controls.Add(this.pass2txt);
             this.panel1.Controls.Add(this.pass1txt);
@@ -74,19 +74,6 @@ namespace cabsystem
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(901, 527);
             this.panel1.TabIndex = 0;
-            // 
-            // loginbtn
-            // 
-            this.loginbtn.BackColor = System.Drawing.Color.DarkGoldenrod;
-            this.loginbtn.Font = new System.Drawing.Font("Arial Rounded MT Bold", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.loginbtn.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.loginbtn.Location = new System.Drawing.Point(491, 458);
-            this.loginbtn.Name = "loginbtn";
-            this.loginbtn.Size = new System.Drawing.Size(195, 44);
-            this.loginbtn.TabIndex = 16;
-            this.loginbtn.Text = "Login";
-            this.loginbtn.UseVisualStyleBackColor = false;
-            this.loginbtn.Click += new System.EventHandler(this.loginbutton_Click);
             // 
             // register
             // 
@@ -228,6 +215,18 @@ namespace cabsystem
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
+            // loginbutton
+            // 
+            this.loginbutton.BackColor = System.Drawing.Color.DarkGoldenrod;
+            this.loginbutton.Font = new System.Drawing.Font("Arial Rounded MT Bold", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.loginbutton.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.loginbutton.Location = new System.Drawing.Point(491, 458);
+            this.loginbutton.Name = "loginbutton";
+            this.loginbutton.Size = new System.Drawing.Size(195, 44);
+            this.loginbutton.TabIndex = 16;
+            this.loginbutton.Text = "Login";
+            this.loginbutton.UseVisualStyleBackColor = false;
+            // 
             // signup_page
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
@@ -264,7 +263,7 @@ namespace cabsystem
         private System.Windows.Forms.TextBox ltxt;
         private System.Windows.Forms.TextBox ftxt;
         private System.Windows.Forms.Button register;
-        private System.Windows.Forms.Button loginbtn;
+        private System.Windows.Forms.Button loginbutton;
     }
 }
 
