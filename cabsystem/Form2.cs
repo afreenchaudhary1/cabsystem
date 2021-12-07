@@ -31,8 +31,9 @@ namespace cabsystem
             if (passtxt.Text != string.Empty || usertxt.Text != string.Empty)
             {
 
-                SqlCommand cmd = new SqlCommand("select * from login where Username=('" + usertxt.Text + "' and Password='" + passtxt.Text + "')");  
-                dr = cmd.ExecuteReader();
+                SqlCommand cmd = new SqlCommand("select * from login where Username=('" + usertxt.Text + "' and Password='" + passtxt.Text + "')" );  
+               dr = cmd.ExecuteReader();
+               
                 if (dr.Read())
                 {
                     dr.Close();
