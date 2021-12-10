@@ -61,6 +61,8 @@ namespace cabsystem
             this.radioButton7 = new System.Windows.Forms.RadioButton();
             this.label14 = new System.Windows.Forms.Label();
             this.textBox9 = new System.Windows.Forms.TextBox();
+            this.label15 = new System.Windows.Forms.Label();
+            this.textBox10 = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -68,6 +70,8 @@ namespace cabsystem
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.White;
+            this.panel1.Controls.Add(this.textBox10);
+            this.panel1.Controls.Add(this.label15);
             this.panel1.Controls.Add(this.textBox9);
             this.panel1.Controls.Add(this.label14);
             this.panel1.Controls.Add(this.radioButton7);
@@ -101,7 +105,7 @@ namespace cabsystem
             this.panel1.Controls.Add(this.label1);
             this.panel1.Location = new System.Drawing.Point(45, 49);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1010, 630);
+            this.panel1.Size = new System.Drawing.Size(1010, 680);
             this.panel1.TabIndex = 0;
             // 
             // textBox8
@@ -426,12 +430,31 @@ namespace cabsystem
             this.textBox9.Size = new System.Drawing.Size(133, 27);
             this.textBox9.TabIndex = 37;
             // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.label15.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label15.Location = new System.Drawing.Point(41, 583);
+            this.label15.Name = "label15";
+            this.label15.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.label15.Size = new System.Drawing.Size(165, 23);
+            this.label15.TabIndex = 38;
+            this.label15.Text = "Aadhar card No";
+            // 
+            // textBox10
+            // 
+            this.textBox10.Location = new System.Drawing.Point(228, 583);
+            this.textBox10.Name = "textBox10";
+            this.textBox10.Size = new System.Drawing.Size(326, 27);
+            this.textBox10.TabIndex = 39;
+            // 
             // Driverregistration
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Goldenrod;
-            this.ClientSize = new System.Drawing.Size(1102, 724);
+            this.ClientSize = new System.Drawing.Size(1102, 774);
             this.Controls.Add(this.panel1);
             this.Name = "Driverregistration";
             this.Text = "Form4";
@@ -476,5 +499,7 @@ namespace cabsystem
         private System.Windows.Forms.RadioButton radioButton3;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.TextBox textBox10;
+        private System.Windows.Forms.Label label15;
     }
 }
