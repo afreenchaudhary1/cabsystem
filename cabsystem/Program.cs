@@ -18,6 +18,7 @@ namespace cabsystem
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new signuppage());
+            Application.Run(new loginpage());
         }
     }
 }

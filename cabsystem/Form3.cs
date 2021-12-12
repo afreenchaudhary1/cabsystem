@@ -8,9 +8,9 @@ using System.Windows.Forms;
 
 namespace cabsystem
 {
-    public partial class Form3 : Form
+    public partial class dashboard : Form
     {
-        public Form3()
+        public dashboard()
         {
             InitializeComponent();
         }

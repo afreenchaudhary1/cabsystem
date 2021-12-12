@@ -64,12 +64,13 @@ namespace cabsystem
             this.signupbtn.BackColor = System.Drawing.Color.Goldenrod;
             this.signupbtn.Font = new System.Drawing.Font("Arial Rounded MT Bold", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.signupbtn.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.signupbtn.Location = new System.Drawing.Point(305, 440);
+            this.signupbtn.Location = new System.Drawing.Point(305, 432);
             this.signupbtn.Name = "signupbtn";
             this.signupbtn.Size = new System.Drawing.Size(152, 42);
             this.signupbtn.TabIndex = 7;
             this.signupbtn.Text = "Signup";
             this.signupbtn.UseVisualStyleBackColor = false;
+            this.signupbtn.Click += new System.EventHandler(this.signupbtn_Click);
             // 
             // loginbutton
             // 
@@ -90,6 +91,7 @@ namespace cabsystem
             this.passtxt.Name = "passtxt";
             this.passtxt.Size = new System.Drawing.Size(339, 27);
             this.passtxt.TabIndex = 5;
+            this.passtxt.UseSystemPasswordChar = true;
             // 
             // usertxt
             // 

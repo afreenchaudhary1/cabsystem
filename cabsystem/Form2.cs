@@ -28,31 +28,51 @@ namespace cabsystem
 
         private void loginbutton_Click(object sender, EventArgs e)
         {
-            if (passtxt.Text != string.Empty || usertxt.Text != string.Empty)
+            try
             {
 
-                SqlCommand cmd = new SqlCommand("select * from login where Username=('" + usertxt.Text + "' and Password='" + passtxt.Text + "')" );  
-               dr = cmd.ExecuteReader();
-               
-                if (dr.Read())
+                String str = "Server=localhost;Database=cab;Trusted_Connection=True";
+                SqlConnection cn = new SqlConnection(str);
+                cn.Open();
+                SqlCommand cmd = new SqlCommand("select * from signup where Username='" + usertxt.Text + "' and Password='" + passtxt.Text + "'",cn);
+                SqlDataReader sdr = cmd.ExecuteReader();
+                //
+                if (sdr.Read())
                 {
-                    dr.Close();
+                  
+
+                    //usertxt.Text = (sdr["Username"]).ToString();
+                    //passtxt.Text = (sdr["Password"]).ToString();
                     this.Hide();
                     dashboard f3 = new dashboard();
                     f3.ShowDialog();
                 }
+                else if(usertxt.Text == string.Empty || passtxt.Text == string.Empty)
+                {
+                    MessageBox.Show("please enter username password", "error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
                 else
                 {
-                    dr.Close();
-                    MessageBox.Show("No Account avilable with this username and password ", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show("invalid username or password", "error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
+                cn.Close();
+
 
             }
-            else
+
+
+            catch (Exception es)
             {
-                MessageBox.Show("Please enter value in all field.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show(es.Message);
             }
 
+        }
+
+        private void signupbtn_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+             signuppage f1 = new signuppage();
+            f1.ShowDialog();
         }
     }
 }
