@@ -30,31 +30,25 @@ namespace cabsystem
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
-            this.u3 = new System.Windows.Forms.Button();
-            this.b3 = new System.Windows.Forms.Button();
-            this.u2 = new System.Windows.Forms.Button();
-            this.b2 = new System.Windows.Forms.Button();
-            this.label18 = new System.Windows.Forms.Label();
-            this.label17 = new System.Windows.Forms.Label();
-            this.u1 = new System.Windows.Forms.Button();
-            this.b1 = new System.Windows.Forms.Button();
-            this.label16 = new System.Windows.Forms.Label();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.y = new System.Windows.Forms.RadioButton();
+            this.n = new System.Windows.Forms.RadioButton();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.m1 = new System.Windows.Forms.RadioButton();
+            this.m2 = new System.Windows.Forms.RadioButton();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.g1 = new System.Windows.Forms.RadioButton();
+            this.g2 = new System.Windows.Forms.RadioButton();
+            this.g3 = new System.Windows.Forms.RadioButton();
             this.button1 = new System.Windows.Forms.Button();
             this.acn = new System.Windows.Forms.TextBox();
             this.label15 = new System.Windows.Forms.Label();
             this.q = new System.Windows.Forms.TextBox();
             this.label14 = new System.Windows.Forms.Label();
-            this.m2 = new System.Windows.Forms.RadioButton();
-            this.m1 = new System.Windows.Forms.RadioButton();
             this.label13 = new System.Windows.Forms.Label();
-            this.g3 = new System.Windows.Forms.RadioButton();
-            this.g2 = new System.Windows.Forms.RadioButton();
-            this.g1 = new System.Windows.Forms.RadioButton();
             this.label12 = new System.Windows.Forms.Label();
             this.ln = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
-            this.n = new System.Windows.Forms.RadioButton();
-            this.y = new System.Windows.Forms.RadioButton();
             this.label10 = new System.Windows.Forms.Label();
             this.age = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
@@ -71,36 +65,26 @@ namespace cabsystem
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
+            this.groupBox3.SuspendLayout();
+            this.groupBox2.SuspendLayout();
+            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.White;
-            this.panel1.Controls.Add(this.u3);
-            this.panel1.Controls.Add(this.b3);
-            this.panel1.Controls.Add(this.u2);
-            this.panel1.Controls.Add(this.b2);
-            this.panel1.Controls.Add(this.label18);
-            this.panel1.Controls.Add(this.label17);
-            this.panel1.Controls.Add(this.u1);
-            this.panel1.Controls.Add(this.b1);
-            this.panel1.Controls.Add(this.label16);
+            this.panel1.Controls.Add(this.groupBox3);
+            this.panel1.Controls.Add(this.groupBox2);
+            this.panel1.Controls.Add(this.groupBox1);
             this.panel1.Controls.Add(this.button1);
             this.panel1.Controls.Add(this.acn);
             this.panel1.Controls.Add(this.label15);
             this.panel1.Controls.Add(this.q);
             this.panel1.Controls.Add(this.label14);
-            this.panel1.Controls.Add(this.m2);
-            this.panel1.Controls.Add(this.m1);
             this.panel1.Controls.Add(this.label13);
-            this.panel1.Controls.Add(this.g3);
-            this.panel1.Controls.Add(this.g2);
-            this.panel1.Controls.Add(this.g1);
             this.panel1.Controls.Add(this.label12);
             this.panel1.Controls.Add(this.ln);
             this.panel1.Controls.Add(this.label11);
-            this.panel1.Controls.Add(this.n);
-            this.panel1.Controls.Add(this.y);
             this.panel1.Controls.Add(this.label10);
             this.panel1.Controls.Add(this.age);
             this.panel1.Controls.Add(this.label9);
@@ -121,102 +105,130 @@ namespace cabsystem
             this.panel1.Size = new System.Drawing.Size(1068, 871);
             this.panel1.TabIndex = 0;
             // 
-            // u3
+            // groupBox3
             // 
-            this.u3.BackColor = System.Drawing.Color.LightGray;
-            this.u3.Location = new System.Drawing.Point(494, 749);
-            this.u3.Name = "u3";
-            this.u3.Size = new System.Drawing.Size(140, 29);
-            this.u3.TabIndex = 49;
-            this.u3.Text = "Upload";
-            this.u3.UseVisualStyleBackColor = false;
+            this.groupBox3.Controls.Add(this.y);
+            this.groupBox3.Controls.Add(this.n);
+            this.groupBox3.Location = new System.Drawing.Point(329, 374);
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.Size = new System.Drawing.Size(212, 55);
+            this.groupBox3.TabIndex = 52;
+            this.groupBox3.TabStop = false;
+            this.groupBox3.Text = "groupBox3";
             // 
-            // b3
+            // y
             // 
-            this.b3.BackColor = System.Drawing.Color.LightGray;
-            this.b3.Location = new System.Drawing.Point(283, 749);
-            this.b3.Name = "b3";
-            this.b3.Size = new System.Drawing.Size(140, 29);
-            this.b3.TabIndex = 48;
-            this.b3.Text = "Browse";
-            this.b3.UseVisualStyleBackColor = false;
+            this.y.AutoSize = true;
+            this.y.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.y.Location = new System.Drawing.Point(20, 26);
+            this.y.Name = "y";
+            this.y.Size = new System.Drawing.Size(67, 27);
+            this.y.TabIndex = 24;
+            this.y.TabStop = true;
+            this.y.Text = "Yes";
+            this.y.UseVisualStyleBackColor = true;
             // 
-            // u2
+            // n
             // 
-            this.u2.BackColor = System.Drawing.Color.LightGray;
-            this.u2.Location = new System.Drawing.Point(494, 683);
-            this.u2.Name = "u2";
-            this.u2.Size = new System.Drawing.Size(140, 29);
-            this.u2.TabIndex = 47;
-            this.u2.Text = "Upload";
-            this.u2.UseVisualStyleBackColor = false;
+            this.n.AutoSize = true;
+            this.n.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.n.Location = new System.Drawing.Point(136, 22);
+            this.n.Name = "n";
+            this.n.Size = new System.Drawing.Size(58, 27);
+            this.n.TabIndex = 25;
+            this.n.TabStop = true;
+            this.n.Text = "No";
+            this.n.UseVisualStyleBackColor = true;
             // 
-            // b2
+            // groupBox2
             // 
-            this.b2.BackColor = System.Drawing.Color.LightGray;
-            this.b2.Location = new System.Drawing.Point(283, 683);
-            this.b2.Name = "b2";
-            this.b2.Size = new System.Drawing.Size(140, 29);
-            this.b2.TabIndex = 46;
-            this.b2.Text = "Browse";
-            this.b2.UseVisualStyleBackColor = false;
+            this.groupBox2.Controls.Add(this.m1);
+            this.groupBox2.Controls.Add(this.m2);
+            this.groupBox2.Location = new System.Drawing.Point(719, 252);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(250, 57);
+            this.groupBox2.TabIndex = 51;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "groupBox2";
             // 
-            // label18
+            // m1
             // 
-            this.label18.AutoSize = true;
-            this.label18.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label18.Location = new System.Drawing.Point(47, 750);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(86, 23);
-            this.label18.TabIndex = 45;
-            this.label18.Text = "License";
+            this.m1.AutoSize = true;
+            this.m1.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.m1.Location = new System.Drawing.Point(6, 24);
+            this.m1.Name = "m1";
+            this.m1.Size = new System.Drawing.Size(108, 27);
+            this.m1.TabIndex = 34;
+            this.m1.TabStop = true;
+            this.m1.Text = "Married";
+            this.m1.UseVisualStyleBackColor = true;
             // 
-            // label17
+            // m2
             // 
-            this.label17.AutoSize = true;
-            this.label17.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label17.Location = new System.Drawing.Point(44, 684);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(133, 23);
-            this.label17.TabIndex = 44;
-            this.label17.Text = "Aadhar card";
+            this.m2.AutoSize = true;
+            this.m2.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.m2.Location = new System.Drawing.Point(153, 24);
+            this.m2.Name = "m2";
+            this.m2.Size = new System.Drawing.Size(91, 27);
+            this.m2.TabIndex = 35;
+            this.m2.TabStop = true;
+            this.m2.Text = "Single";
+            this.m2.UseVisualStyleBackColor = true;
             // 
-            // u1
+            // groupBox1
             // 
-            this.u1.BackColor = System.Drawing.Color.LightGray;
-            this.u1.Location = new System.Drawing.Point(494, 616);
-            this.u1.Name = "u1";
-            this.u1.Size = new System.Drawing.Size(140, 30);
-            this.u1.TabIndex = 43;
-            this.u1.Text = "Upload";
-            this.u1.UseVisualStyleBackColor = false;
+            this.groupBox1.Controls.Add(this.g1);
+            this.groupBox1.Controls.Add(this.g2);
+            this.groupBox1.Controls.Add(this.g3);
+            this.groupBox1.Location = new System.Drawing.Point(700, 159);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(225, 89);
+            this.groupBox1.TabIndex = 50;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "groupBox1";
             // 
-            // b1
+            // g1
             // 
-            this.b1.BackColor = System.Drawing.Color.LightGray;
-            this.b1.Location = new System.Drawing.Point(283, 616);
-            this.b1.Name = "b1";
-            this.b1.Size = new System.Drawing.Size(140, 30);
-            this.b1.TabIndex = 42;
-            this.b1.Text = "Browse";
-            this.b1.UseVisualStyleBackColor = false;
+            this.g1.AutoSize = true;
+            this.g1.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.g1.Location = new System.Drawing.Point(15, 37);
+            this.g1.Name = "g1";
+            this.g1.Size = new System.Drawing.Size(43, 27);
+            this.g1.TabIndex = 30;
+            this.g1.TabStop = true;
+            this.g1.Text = "F";
+            this.g1.UseVisualStyleBackColor = true;
             // 
-            // label16
+            // g2
             // 
-            this.label16.AutoSize = true;
-            this.label16.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label16.Location = new System.Drawing.Point(44, 618);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(173, 23);
-            this.label16.TabIndex = 41;
-            this.label16.Text = "Passport picture";
+            this.g2.AutoSize = true;
+            this.g2.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.g2.Location = new System.Drawing.Point(80, 37);
+            this.g2.Name = "g2";
+            this.g2.Size = new System.Drawing.Size(48, 27);
+            this.g2.TabIndex = 31;
+            this.g2.TabStop = true;
+            this.g2.Text = "M";
+            this.g2.UseVisualStyleBackColor = true;
+            // 
+            // g3
+            // 
+            this.g3.AutoSize = true;
+            this.g3.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.g3.Location = new System.Drawing.Point(150, 37);
+            this.g3.Name = "g3";
+            this.g3.Size = new System.Drawing.Size(47, 27);
+            this.g3.TabIndex = 32;
+            this.g3.TabStop = true;
+            this.g3.Text = "O";
+            this.g3.UseVisualStyleBackColor = true;
             // 
             // button1
             // 
             this.button1.BackColor = System.Drawing.Color.Goldenrod;
             this.button1.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(406, 812);
+            this.button1.Location = new System.Drawing.Point(406, 657);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(181, 45);
             this.button1.TabIndex = 40;
@@ -262,30 +274,6 @@ namespace cabsystem
             this.label14.TabIndex = 36;
             this.label14.Text = "Qualification";
             // 
-            // m2
-            // 
-            this.m2.AutoSize = true;
-            this.m2.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.m2.Location = new System.Drawing.Point(853, 264);
-            this.m2.Name = "m2";
-            this.m2.Size = new System.Drawing.Size(91, 27);
-            this.m2.TabIndex = 35;
-            this.m2.TabStop = true;
-            this.m2.Text = "Single";
-            this.m2.UseVisualStyleBackColor = true;
-            // 
-            // m1
-            // 
-            this.m1.AutoSize = true;
-            this.m1.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.m1.Location = new System.Drawing.Point(730, 264);
-            this.m1.Name = "m1";
-            this.m1.Size = new System.Drawing.Size(108, 27);
-            this.m1.TabIndex = 34;
-            this.m1.TabStop = true;
-            this.m1.Text = "Married";
-            this.m1.UseVisualStyleBackColor = true;
-            // 
             // label13
             // 
             this.label13.AutoSize = true;
@@ -297,42 +285,6 @@ namespace cabsystem
             this.label13.Size = new System.Drawing.Size(144, 23);
             this.label13.TabIndex = 33;
             this.label13.Text = "Martial Status";
-            // 
-            // g3
-            // 
-            this.g3.AutoSize = true;
-            this.g3.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.g3.Location = new System.Drawing.Point(853, 199);
-            this.g3.Name = "g3";
-            this.g3.Size = new System.Drawing.Size(47, 27);
-            this.g3.TabIndex = 32;
-            this.g3.TabStop = true;
-            this.g3.Text = "O";
-            this.g3.UseVisualStyleBackColor = true;
-            // 
-            // g2
-            // 
-            this.g2.AutoSize = true;
-            this.g2.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.g2.Location = new System.Drawing.Point(790, 197);
-            this.g2.Name = "g2";
-            this.g2.Size = new System.Drawing.Size(48, 27);
-            this.g2.TabIndex = 31;
-            this.g2.TabStop = true;
-            this.g2.Text = "M";
-            this.g2.UseVisualStyleBackColor = true;
-            // 
-            // g1
-            // 
-            this.g1.AutoSize = true;
-            this.g1.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.g1.Location = new System.Drawing.Point(730, 197);
-            this.g1.Name = "g1";
-            this.g1.Size = new System.Drawing.Size(43, 27);
-            this.g1.TabIndex = 30;
-            this.g1.TabStop = true;
-            this.g1.Text = "F";
-            this.g1.UseVisualStyleBackColor = true;
             // 
             // label12
             // 
@@ -364,30 +316,6 @@ namespace cabsystem
             this.label11.Size = new System.Drawing.Size(118, 23);
             this.label11.TabIndex = 26;
             this.label11.Text = "License No";
-            // 
-            // n
-            // 
-            this.n.AutoSize = true;
-            this.n.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.n.Location = new System.Drawing.Point(425, 398);
-            this.n.Name = "n";
-            this.n.Size = new System.Drawing.Size(58, 27);
-            this.n.TabIndex = 25;
-            this.n.TabStop = true;
-            this.n.Text = "No";
-            this.n.UseVisualStyleBackColor = true;
-            // 
-            // y
-            // 
-            this.y.AutoSize = true;
-            this.y.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.y.Location = new System.Drawing.Point(339, 400);
-            this.y.Name = "y";
-            this.y.Size = new System.Drawing.Size(67, 27);
-            this.y.TabIndex = 24;
-            this.y.TabStop = true;
-            this.y.Text = "Yes";
-            this.y.UseVisualStyleBackColor = true;
             // 
             // label10
             // 
@@ -550,6 +478,12 @@ namespace cabsystem
             this.Text = "Form4";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            this.groupBox3.ResumeLayout(false);
+            this.groupBox3.PerformLayout();
+            this.groupBox2.ResumeLayout(false);
+            this.groupBox2.PerformLayout();
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -597,5 +531,8 @@ namespace cabsystem
         private System.Windows.Forms.Button b2;
         private System.Windows.Forms.Label label18;
         private System.Windows.Forms.Label label17;
+        private System.Windows.Forms.GroupBox groupBox3;
+        private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.GroupBox groupBox1;
     }
 }
