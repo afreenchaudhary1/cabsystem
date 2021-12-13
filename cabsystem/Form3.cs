@@ -25,7 +25,7 @@ namespace cabsystem
         private void driver_Click(object sender, EventArgs e)
         {
             this.Hide();
-            Driverdetail f3 = new Driverdetail();
+            Drivers f3 = new Drivers();
             f3.ShowDialog();
 
         }

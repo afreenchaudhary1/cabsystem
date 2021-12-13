@@ -8,9 +8,9 @@ using System.Windows.Forms;
 
 namespace cabsystem
 {
-    public partial class Driverdetail : Form
+    public partial class Drivers : Form
     {
-        public Driverdetail()
+        public Drivers()
         {
             InitializeComponent();
         }
