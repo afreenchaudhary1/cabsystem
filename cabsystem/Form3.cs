@@ -14,5 +14,27 @@ namespace cabsystem
         {
             InitializeComponent();
         }
+
+        private void reg2_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Cabregistration f3 = new Cabregistration();
+            f3.ShowDialog();
+        }
+
+        private void driver_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Driverdetail f3 = new Driverdetail();
+            f3.ShowDialog();
+
+        }
+
+        private void cab_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Cabdetail f3 = new Cabdetail();
+            f3.ShowDialog();
+        }
     }
 }

@@ -45,9 +45,9 @@ namespace cabsystem
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Arial Rounded MT Bold", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label1.ForeColor = System.Drawing.Color.Goldenrod;
-            this.label1.Location = new System.Drawing.Point(371, 21);
+            this.label1.Location = new System.Drawing.Point(424, 28);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(188, 37);
+            this.label1.Size = new System.Drawing.Size(236, 46);
             this.label1.TabIndex = 0;
             this.label1.Text = "Dashboard";
             // 
@@ -56,9 +56,10 @@ namespace cabsystem
             this.home.BackColor = System.Drawing.Color.Goldenrod;
             this.home.Font = new System.Drawing.Font("Arial Rounded MT Bold", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.home.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.home.Location = new System.Drawing.Point(-3, 80);
+            this.home.Location = new System.Drawing.Point(-3, 107);
+            this.home.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.home.Name = "home";
-            this.home.Size = new System.Drawing.Size(298, 51);
+            this.home.Size = new System.Drawing.Size(341, 68);
             this.home.TabIndex = 1;
             this.home.Text = "Home";
             this.home.UseVisualStyleBackColor = false;
@@ -68,31 +69,36 @@ namespace cabsystem
             this.driver.BackColor = System.Drawing.Color.Goldenrod;
             this.driver.Font = new System.Drawing.Font("Arial Rounded MT Bold", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.driver.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.driver.Location = new System.Drawing.Point(289, 80);
+            this.driver.Location = new System.Drawing.Point(330, 107);
+            this.driver.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.driver.Name = "driver";
-            this.driver.Size = new System.Drawing.Size(316, 51);
+            this.driver.Size = new System.Drawing.Size(361, 68);
             this.driver.TabIndex = 2;
             this.driver.Text = "Drivers";
             this.driver.UseVisualStyleBackColor = false;
+            this.driver.Click += new System.EventHandler(this.driver_Click);
             // 
             // cab
             // 
             this.cab.BackColor = System.Drawing.Color.Goldenrod;
             this.cab.Font = new System.Drawing.Font("Arial Rounded MT Bold", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.cab.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.cab.Location = new System.Drawing.Point(603, 80);
+            this.cab.Location = new System.Drawing.Point(689, 107);
+            this.cab.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.cab.Name = "cab";
-            this.cab.Size = new System.Drawing.Size(298, 51);
+            this.cab.Size = new System.Drawing.Size(341, 68);
             this.cab.TabIndex = 3;
             this.cab.Text = "Cabs";
             this.cab.UseVisualStyleBackColor = false;
+            this.cab.Click += new System.EventHandler(this.cab_Click);
             // 
             // pictureBox1
             // 
             this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
-            this.pictureBox1.Location = new System.Drawing.Point(371, 137);
+            this.pictureBox1.Location = new System.Drawing.Point(424, 183);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(151, 94);
+            this.pictureBox1.Size = new System.Drawing.Size(153, 112);
             this.pictureBox1.TabIndex = 4;
             this.pictureBox1.TabStop = false;
             // 
@@ -101,9 +107,10 @@ namespace cabsystem
             this.reg1.BackColor = System.Drawing.Color.Goldenrod;
             this.reg1.Font = new System.Drawing.Font("Arial Rounded MT Bold", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.reg1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.reg1.Location = new System.Drawing.Point(312, 247);
+            this.reg1.Location = new System.Drawing.Point(357, 329);
+            this.reg1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.reg1.Name = "reg1";
-            this.reg1.Size = new System.Drawing.Size(281, 51);
+            this.reg1.Size = new System.Drawing.Size(321, 68);
             this.reg1.TabIndex = 5;
             this.reg1.Text = "Drivers  Registration";
             this.reg1.UseVisualStyleBackColor = false;
@@ -113,19 +120,21 @@ namespace cabsystem
             this.reg2.BackColor = System.Drawing.Color.Goldenrod;
             this.reg2.Font = new System.Drawing.Font("Arial Rounded MT Bold", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.reg2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.reg2.Location = new System.Drawing.Point(312, 327);
+            this.reg2.Location = new System.Drawing.Point(357, 436);
+            this.reg2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.reg2.Name = "reg2";
-            this.reg2.Size = new System.Drawing.Size(281, 51);
+            this.reg2.Size = new System.Drawing.Size(321, 68);
             this.reg2.TabIndex = 6;
             this.reg2.Text = "Cab  Registration";
             this.reg2.UseVisualStyleBackColor = false;
+            this.reg2.Click += new System.EventHandler(this.reg2_Click);
             // 
             // dashboard
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.ClientSize = new System.Drawing.Size(904, 461);
+            this.ClientSize = new System.Drawing.Size(1033, 615);
             this.Controls.Add(this.reg2);
             this.Controls.Add(this.reg1);
             this.Controls.Add(this.pictureBox1);
@@ -133,7 +142,6 @@ namespace cabsystem
             this.Controls.Add(this.driver);
             this.Controls.Add(this.home);
             this.Controls.Add(this.label1);
-            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "dashboard";
             this.Text = "Form3";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
