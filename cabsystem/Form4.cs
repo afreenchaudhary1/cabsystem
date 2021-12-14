@@ -21,119 +21,7 @@ namespace cabsystem
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-            cn.Open();
-            //checkRadioButtons();
-            if (fname.Text == string.Empty || lname.Text == string.Empty || email.Text == string.Empty || add.Text == string.Empty || pincode.Text == string.Empty || age.Text == string.Empty || q.Text == string.Empty || ln.Text == string.Empty || acn.Text == string.Empty)
-            {
-                MessageBox.Show("Please fill empty fields", "error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                
-            }
-            else
-            {
-                SqlCommand cmd = cn.CreateCommand();
-                cmd.CommandType = CommandType.Text;
-                cmd.CommandText = (@"insert into drivers  (First-name=@Fname,Last-name=@Lname,Email=@Email,Address=@Address,pincode=@Pincode,age=@Age,License-no=@License,Qualification=@Qualif,Aadhar-no=@Aadhar)");
-                cmd.Parameters.AddWithValue("@Fname", fname.Text);
-                cmd.Parameters.AddWithValue("@Lname", lname.Text);
-                cmd.Parameters.AddWithValue("@Email", email.Text);
-                cmd.Parameters.AddWithValue("@Address", add.Text);
-                cmd.Parameters.AddWithValue("@Pincode", pincode.Text);
-                cmd.Parameters.AddWithValue("@Age", age.Text);
-                cmd.Parameters.AddWithValue("@License", ln.Text);
-                cmd.Parameters.AddWithValue("@Qualification", q.Text);
-                cmd.Parameters.AddWithValue("@Aadhar", acn.Text);
-                //cmd.Parameters.AddWithValue("@Mobile", textBox6.Text);
-                cmd.ExecuteNonQuery();
-                
-            }
-
-
-
-            if(g1.Checked == true)
-            {
-                
-                SqlCommand cmd = cn.CreateCommand();
-                cmd.CommandType = CommandType.Text;
-                cmd.CommandText = (@"insert into drivers (Gender=female)");
-                cmd.ExecuteNonQuery();
-                
-            }
-            else if(g2.Checked == true)
-            {
-                
-                SqlCommand cmd = cn.CreateCommand();
-                cmd.CommandType = CommandType.Text;
-                cmd.CommandText = (@"insert into drivers (Gender=male)");
-                cmd.ExecuteNonQuery();
-                
-            }
-            else if(g3.Checked == true)
-            {
-                
-                SqlCommand cmd = cn.CreateCommand();
-                cmd.CommandType = CommandType.Text;
-                cmd.CommandText = (@"insert into drivers (Gender=others)");
-                cmd.ExecuteNonQuery();
-                
-            }
-            else
-            {
-                MessageBox.Show("Please select gender", "error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
-
-
-            if (m1.Checked == true)
-            {
-                
-                SqlCommand cmd = cn.CreateCommand();
-                cmd.CommandType = CommandType.Text;
-                cmd.CommandText = (@"insert into drivers (status=married)");
-                cmd.ExecuteNonQuery();
-                
-            }
-            else if (m2.Checked == true)
-            {
-                
-                SqlCommand cmd = cn.CreateCommand();
-                cmd.CommandType = CommandType.Text;
-                cmd.CommandText = (@"insert into drivers (status=single)");
-                cmd.ExecuteNonQuery();
-               
-            }
-            else
-            {
-                MessageBox.Show("Please select marital status", "error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
-
-
-
-            if (y.Checked == true)
-            {
-                cn.Open();
-                SqlCommand cmd = cn.CreateCommand();
-                cmd.CommandType = CommandType.Text;
-                cmd.CommandText = (@"insert into drivers (yesno=yes)");
-                cmd.ExecuteNonQuery();
-                
-            }
-            else if (n.Checked == true)
-            {
-                cn.Open();
-                SqlCommand cmd = cn.CreateCommand();
-                cmd.CommandType = CommandType.Text;
-                cmd.CommandText = (@"insert into driver (yesno=no)");
-                cmd.ExecuteNonQuery();
-                
-            }
-            else
-            {
-                MessageBox.Show("Please select if you have license or not", "error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
-            cn.Close();
-
-        }
+        
 
         private void email_Validating(object sender, CancelEventArgs e)
         {
@@ -153,6 +41,115 @@ namespace cabsystem
             }
         }
 
-        
+        private void submit_Click_1(object sender, EventArgs e)
+        {
+            cn.Open();
+
+            if (fname.Text == string.Empty || lname.Text == string.Empty || email.Text == string.Empty || add.Text == string.Empty || pincode.Text == string.Empty || age.Text == string.Empty || q.Text == string.Empty || ln.Text == string.Empty || acn.Text == string.Empty)
+            {
+                MessageBox.Show("Please fill empty fields", "error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+
+            }
+            else
+            {
+                SqlCommand cmd = cn.CreateCommand();
+                cmd.CommandType = CommandType.Text;
+                cmd.CommandText = (@"insert into drivers (firstname,lastname,email,address,pincode,age,qualification,licenseno,aadharno  )
+                values ('" + fname.Text + "','" + lname.Text + "','" + email.Text + "','" + add.Text + "','" + pincode.Text + "','" + age.Text + "','" + q.Text + "','" + ln.Text + "','" + acn.Text + "')");
+                cmd.ExecuteNonQuery();
+                MessageBox.Show("Please select marital status", "error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+
+            }
+
+            if (g1.Checked == true)
+            {
+
+                SqlCommand cmd = cn.CreateCommand();
+                cmd.CommandType = CommandType.Text;
+                cmd.CommandText = (@"insert into driversgender='" + g1.Text + "'");
+                cmd.ExecuteNonQuery();
+
+            }
+            else if (g2.Checked == true)
+            {
+
+                SqlCommand cmd = cn.CreateCommand();
+                cmd.CommandType = CommandType.Text;
+                cmd.CommandText = (@"insert into drivers gender='" + g2.Text + "'");
+                cmd.ExecuteNonQuery();
+
+            }
+            else if (g3.Checked == true)
+            {
+
+                SqlCommand cmd = cn.CreateCommand();
+                cmd.CommandType = CommandType.Text;
+                cmd.CommandText = (@"insert into drivers gender='" + g3.Text + "'");
+                cmd.ExecuteNonQuery();
+
+            }
+            else
+            {
+                MessageBox.Show("Please select gender", "error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+
+
+            if (m1.Checked == true)
+            {
+
+                SqlCommand cmd = cn.CreateCommand();
+                cmd.CommandType = CommandType.Text;
+                cmd.CommandText = (@"insert into drivers (status)
+                  values('" + m1.Text + "')");
+                cmd.ExecuteNonQuery();
+
+            }
+            else if (m2.Checked == true)
+            {
+
+                SqlCommand cmd = cn.CreateCommand();
+                cmd.CommandType = CommandType.Text;
+                cmd.CommandText = (@"insert into drivers (status)
+                  values('" + m2.Text + "')");
+                cmd.ExecuteNonQuery();
+
+            }
+            else
+            {
+                MessageBox.Show("Please select marital status", "error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+
+
+
+            if (y.Checked == true)
+            {
+                cn.Open();
+                SqlCommand cmd = cn.CreateCommand();
+                cmd.CommandType = CommandType.Text;
+                cmd.CommandText = (@"insert into drivers yesno='" + y.Text + "'");
+                cmd.ExecuteNonQuery();
+
+            }
+            else if (n.Checked == true)
+            {
+                cn.Open();
+                SqlCommand cmd = cn.CreateCommand();
+                cmd.CommandType = CommandType.Text;
+                cmd.CommandText = (@"insert into drivers (yesno)
+                  values('" + n.Text + "')");
+                cmd.ExecuteNonQuery();
+
+            }
+            else
+            {
+                MessageBox.Show("Please select if you have license or not", "error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+
+
+
+
+            cn.Close();
+
+        }
     }
 }
