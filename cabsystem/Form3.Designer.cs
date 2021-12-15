@@ -126,6 +126,7 @@ namespace cabsystem
             this.reg2.TabIndex = 6;
             this.reg2.Text = "Cab  Registration";
             this.reg2.UseVisualStyleBackColor = false;
+            this.reg2.Click += new System.EventHandler(this.reg2_Click);
             // 
             // dashboard
             // 
