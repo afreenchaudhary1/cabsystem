@@ -49,8 +49,6 @@ namespace cabsystem
             this.label10 = new System.Windows.Forms.Label();
             this.age = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
-            this.dob = new System.Windows.Forms.TextBox();
-            this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.pincode = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
@@ -63,32 +61,12 @@ namespace cabsystem
             this.fname = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.label16 = new System.Windows.Forms.Label();
-            this.b1 = new System.Windows.Forms.Button();
-            this.u1 = new System.Windows.Forms.Button();
-            this.label17 = new System.Windows.Forms.Label();
-            this.label18 = new System.Windows.Forms.Label();
-            this.b2 = new System.Windows.Forms.Button();
-            this.u2 = new System.Windows.Forms.Button();
-            this.b3 = new System.Windows.Forms.Button();
-            this.u3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.White;
-            this.panel1.Controls.Add(this.button2);
-            this.panel1.Controls.Add(this.u3);
-            this.panel1.Controls.Add(this.b3);
-            this.panel1.Controls.Add(this.u2);
-            this.panel1.Controls.Add(this.b2);
-            this.panel1.Controls.Add(this.label18);
-            this.panel1.Controls.Add(this.label17);
-            this.panel1.Controls.Add(this.u1);
-            this.panel1.Controls.Add(this.b1);
-            this.panel1.Controls.Add(this.label16);
             this.panel1.Controls.Add(this.button1);
             this.panel1.Controls.Add(this.acn);
             this.panel1.Controls.Add(this.label15);
@@ -108,8 +86,6 @@ namespace cabsystem
             this.panel1.Controls.Add(this.label10);
             this.panel1.Controls.Add(this.age);
             this.panel1.Controls.Add(this.label9);
-            this.panel1.Controls.Add(this.dob);
-            this.panel1.Controls.Add(this.label8);
             this.panel1.Controls.Add(this.label7);
             this.panel1.Controls.Add(this.pincode);
             this.panel1.Controls.Add(this.label6);
@@ -132,7 +108,7 @@ namespace cabsystem
             this.button1.BackColor = System.Drawing.Color.Goldenrod;
             this.button1.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(506, 798);
+            this.button1.Location = new System.Drawing.Point(474, 742);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(100, 34);
             this.button1.TabIndex = 40;
@@ -160,7 +136,7 @@ namespace cabsystem
             // 
             // q
             // 
-            this.q.Location = new System.Drawing.Point(730, 455);
+            this.q.Location = new System.Drawing.Point(730, 394);
             this.q.Name = "q";
             this.q.Size = new System.Drawing.Size(133, 27);
             this.q.TabIndex = 37;
@@ -170,7 +146,7 @@ namespace cabsystem
             this.label14.AutoSize = true;
             this.label14.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label14.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label14.Location = new System.Drawing.Point(569, 455);
+            this.label14.Location = new System.Drawing.Point(569, 398);
             this.label14.Name = "label14";
             this.label14.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.label14.Size = new System.Drawing.Size(132, 23);
@@ -335,25 +311,6 @@ namespace cabsystem
             this.label9.TabIndex = 21;
             this.label9.Text = "Age";
             // 
-            // dob
-            // 
-            this.dob.Location = new System.Drawing.Point(730, 400);
-            this.dob.Name = "dob";
-            this.dob.Size = new System.Drawing.Size(133, 27);
-            this.dob.TabIndex = 20;
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label8.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label8.Location = new System.Drawing.Point(569, 398);
-            this.label8.Name = "label8";
-            this.label8.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.label8.Size = new System.Drawing.Size(132, 23);
-            this.label8.TabIndex = 19;
-            this.label8.Text = "Date of Birth";
-            // 
             // label7
             // 
             this.label7.AutoSize = true;
@@ -472,106 +429,6 @@ namespace cabsystem
             this.label1.TabIndex = 2;
             this.label1.Text = "Driver Registration";
             // 
-            // label16
-            // 
-            this.label16.AutoSize = true;
-            this.label16.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label16.Location = new System.Drawing.Point(44, 618);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(173, 23);
-            this.label16.TabIndex = 41;
-            this.label16.Text = "Passport picture";
-            // 
-            // b1
-            // 
-            this.b1.BackColor = System.Drawing.Color.LightGray;
-            this.b1.Location = new System.Drawing.Point(283, 616);
-            this.b1.Name = "b1";
-            this.b1.Size = new System.Drawing.Size(140, 30);
-            this.b1.TabIndex = 42;
-            this.b1.Text = "Browse";
-            this.b1.UseVisualStyleBackColor = false;
-            // 
-            // u1
-            // 
-            this.u1.BackColor = System.Drawing.Color.LightGray;
-            this.u1.Location = new System.Drawing.Point(494, 616);
-            this.u1.Name = "u1";
-            this.u1.Size = new System.Drawing.Size(140, 30);
-            this.u1.TabIndex = 43;
-            this.u1.Text = "Upload";
-            this.u1.UseVisualStyleBackColor = false;
-            // 
-            // label17
-            // 
-            this.label17.AutoSize = true;
-            this.label17.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label17.Location = new System.Drawing.Point(44, 684);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(157, 23);
-            this.label17.TabIndex = 44;
-            this.label17.Text = "Aadhar picture";
-            // 
-            // label18
-            // 
-            this.label18.AutoSize = true;
-            this.label18.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label18.Location = new System.Drawing.Point(47, 750);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(162, 23);
-            this.label18.TabIndex = 45;
-            this.label18.Text = "Licence picture";
-            // 
-            // b2
-            // 
-            this.b2.BackColor = System.Drawing.Color.LightGray;
-            this.b2.Location = new System.Drawing.Point(283, 683);
-            this.b2.Name = "b2";
-            this.b2.Size = new System.Drawing.Size(140, 29);
-            this.b2.TabIndex = 46;
-            this.b2.Text = "Browse";
-            this.b2.UseVisualStyleBackColor = false;
-            // 
-            // u2
-            // 
-            this.u2.BackColor = System.Drawing.Color.LightGray;
-            this.u2.Location = new System.Drawing.Point(494, 683);
-            this.u2.Name = "u2";
-            this.u2.Size = new System.Drawing.Size(140, 29);
-            this.u2.TabIndex = 47;
-            this.u2.Text = "Upload";
-            this.u2.UseVisualStyleBackColor = false;
-            // 
-            // b3
-            // 
-            this.b3.BackColor = System.Drawing.Color.LightGray;
-            this.b3.Location = new System.Drawing.Point(283, 749);
-            this.b3.Name = "b3";
-            this.b3.Size = new System.Drawing.Size(140, 29);
-            this.b3.TabIndex = 48;
-            this.b3.Text = "Browse";
-            this.b3.UseVisualStyleBackColor = false;
-            // 
-            // u3
-            // 
-            this.u3.BackColor = System.Drawing.Color.LightGray;
-            this.u3.Location = new System.Drawing.Point(494, 749);
-            this.u3.Name = "u3";
-            this.u3.Size = new System.Drawing.Size(140, 29);
-            this.u3.TabIndex = 49;
-            this.u3.Text = "Upload";
-            this.u3.UseVisualStyleBackColor = false;
-            // 
-            // button2
-            // 
-            this.button2.BackColor = System.Drawing.Color.LightGray;
-            this.button2.Location = new System.Drawing.Point(698, 744);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(140, 29);
-            this.button2.TabIndex = 50;
-            this.button2.Text = "Upload";
-            this.button2.UseVisualStyleBackColor = false;
-            // 
             // Driverregistration
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
@@ -600,8 +457,6 @@ namespace cabsystem
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.TextBox age;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.TextBox dob;
-        private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.TextBox pincode;
         private System.Windows.Forms.Label label6;
@@ -623,15 +478,5 @@ namespace cabsystem
         private System.Windows.Forms.TextBox acn;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button u1;
-        private System.Windows.Forms.Button b1;
-        private System.Windows.Forms.Label label16;
-        private System.Windows.Forms.Button u3;
-        private System.Windows.Forms.Button b3;
-        private System.Windows.Forms.Button u2;
-        private System.Windows.Forms.Button b2;
-        private System.Windows.Forms.Label label18;
-        private System.Windows.Forms.Label label17;
-        private System.Windows.Forms.Button button2;
     }
 }
