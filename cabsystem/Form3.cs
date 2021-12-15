@@ -18,7 +18,7 @@ namespace cabsystem
         private void reg1_Click(object sender, EventArgs e)
         {
             this.Hide();
-            Driverregistration f4 = new Driverregistration();
+            Form4 f4 = new Form4();
             f4.ShowDialog();
         }
     }

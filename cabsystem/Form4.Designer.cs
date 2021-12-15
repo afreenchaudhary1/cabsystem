@@ -1,7 +1,7 @@
 ﻿
 namespace cabsystem
 {
-    partial class Driverregistration
+    partial class Form4
     {
         /// <summary>
         /// Required designer variable.
@@ -30,23 +30,14 @@ namespace cabsystem
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
-            this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.y = new System.Windows.Forms.RadioButton();
-            this.n = new System.Windows.Forms.RadioButton();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.m1 = new System.Windows.Forms.RadioButton();
-            this.m2 = new System.Windows.Forms.RadioButton();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.g1 = new System.Windows.Forms.RadioButton();
-            this.g2 = new System.Windows.Forms.RadioButton();
-            this.g3 = new System.Windows.Forms.RadioButton();
+            this.gender = new System.Windows.Forms.TextBox();
+            this.yesno = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.acn = new System.Windows.Forms.TextBox();
             this.label15 = new System.Windows.Forms.Label();
             this.q = new System.Windows.Forms.TextBox();
             this.label14 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
             this.ln = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
@@ -65,24 +56,19 @@ namespace cabsystem
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
-            this.groupBox3.SuspendLayout();
-            this.groupBox2.SuspendLayout();
-            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.White;
-            this.panel1.Controls.Add(this.groupBox3);
-            this.panel1.Controls.Add(this.groupBox2);
-            this.panel1.Controls.Add(this.groupBox1);
+            this.panel1.Controls.Add(this.gender);
+            this.panel1.Controls.Add(this.yesno);
             this.panel1.Controls.Add(this.button1);
             this.panel1.Controls.Add(this.acn);
             this.panel1.Controls.Add(this.label15);
             this.panel1.Controls.Add(this.q);
             this.panel1.Controls.Add(this.label14);
             this.panel1.Controls.Add(this.label13);
-            this.panel1.Controls.Add(this.label12);
             this.panel1.Controls.Add(this.ln);
             this.panel1.Controls.Add(this.label11);
             this.panel1.Controls.Add(this.label10);
@@ -100,139 +86,35 @@ namespace cabsystem
             this.panel1.Controls.Add(this.fname);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.label1);
-            this.panel1.Location = new System.Drawing.Point(45, 49);
+            this.panel1.Location = new System.Drawing.Point(46, 27);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1068, 871);
-            this.panel1.TabIndex = 0;
+            this.panel1.Size = new System.Drawing.Size(1068, 879);
+            this.panel1.TabIndex = 1;
             // 
-            // groupBox3
+            // gender
             // 
-            this.groupBox3.Controls.Add(this.y);
-            this.groupBox3.Controls.Add(this.n);
-            this.groupBox3.Location = new System.Drawing.Point(329, 374);
-            this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(212, 55);
-            this.groupBox3.TabIndex = 52;
-            this.groupBox3.TabStop = false;
-            this.groupBox3.Text = "groupBox3";
+            this.gender.Location = new System.Drawing.Point(730, 201);
+            this.gender.Name = "gender";
+            this.gender.Size = new System.Drawing.Size(125, 27);
+            this.gender.TabIndex = 55;
             // 
-            // y
+            // yesno
             // 
-            this.y.AutoSize = true;
-            this.y.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.y.Location = new System.Drawing.Point(20, 26);
-            this.y.Name = "y";
-            this.y.Size = new System.Drawing.Size(67, 27);
-            this.y.TabIndex = 24;
-            this.y.TabStop = true;
-            this.y.Text = "Yes";
-            this.y.UseVisualStyleBackColor = true;
-            // 
-            // n
-            // 
-            this.n.AutoSize = true;
-            this.n.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.n.Location = new System.Drawing.Point(136, 22);
-            this.n.Name = "n";
-            this.n.Size = new System.Drawing.Size(58, 27);
-            this.n.TabIndex = 25;
-            this.n.TabStop = true;
-            this.n.Text = "No";
-            this.n.UseVisualStyleBackColor = true;
-            // 
-            // groupBox2
-            // 
-            this.groupBox2.Controls.Add(this.m1);
-            this.groupBox2.Controls.Add(this.m2);
-            this.groupBox2.Location = new System.Drawing.Point(719, 252);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(250, 57);
-            this.groupBox2.TabIndex = 51;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "groupBox2";
-            // 
-            // m1
-            // 
-            this.m1.AutoSize = true;
-            this.m1.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.m1.Location = new System.Drawing.Point(6, 24);
-            this.m1.Name = "m1";
-            this.m1.Size = new System.Drawing.Size(108, 27);
-            this.m1.TabIndex = 34;
-            this.m1.TabStop = true;
-            this.m1.Text = "Married";
-            this.m1.UseVisualStyleBackColor = true;
-            // 
-            // m2
-            // 
-            this.m2.AutoSize = true;
-            this.m2.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.m2.Location = new System.Drawing.Point(153, 24);
-            this.m2.Name = "m2";
-            this.m2.Size = new System.Drawing.Size(91, 27);
-            this.m2.TabIndex = 35;
-            this.m2.TabStop = true;
-            this.m2.Text = "Single";
-            this.m2.UseVisualStyleBackColor = true;
-            // 
-            // groupBox1
-            // 
-            this.groupBox1.Controls.Add(this.g1);
-            this.groupBox1.Controls.Add(this.g2);
-            this.groupBox1.Controls.Add(this.g3);
-            this.groupBox1.Location = new System.Drawing.Point(700, 159);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(225, 89);
-            this.groupBox1.TabIndex = 50;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "groupBox1";
-            // 
-            // g1
-            // 
-            this.g1.AutoSize = true;
-            this.g1.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.g1.Location = new System.Drawing.Point(15, 37);
-            this.g1.Name = "g1";
-            this.g1.Size = new System.Drawing.Size(43, 27);
-            this.g1.TabIndex = 30;
-            this.g1.TabStop = true;
-            this.g1.Text = "F";
-            this.g1.UseVisualStyleBackColor = true;
-            // 
-            // g2
-            // 
-            this.g2.AutoSize = true;
-            this.g2.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.g2.Location = new System.Drawing.Point(80, 37);
-            this.g2.Name = "g2";
-            this.g2.Size = new System.Drawing.Size(48, 27);
-            this.g2.TabIndex = 31;
-            this.g2.TabStop = true;
-            this.g2.Text = "M";
-            this.g2.UseVisualStyleBackColor = true;
-            // 
-            // g3
-            // 
-            this.g3.AutoSize = true;
-            this.g3.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.g3.Location = new System.Drawing.Point(150, 37);
-            this.g3.Name = "g3";
-            this.g3.Size = new System.Drawing.Size(47, 27);
-            this.g3.TabIndex = 32;
-            this.g3.TabStop = true;
-            this.g3.Text = "O";
-            this.g3.UseVisualStyleBackColor = true;
+            this.yesno.Location = new System.Drawing.Point(329, 394);
+            this.yesno.Name = "yesno";
+            this.yesno.Size = new System.Drawing.Size(125, 27);
+            this.yesno.TabIndex = 54;
             // 
             // button1
             // 
             this.button1.BackColor = System.Drawing.Color.Goldenrod;
-            this.button1.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(406, 657);
+            this.button1.Font = new System.Drawing.Font("Arial Rounded MT Bold", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.button1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.button1.Location = new System.Drawing.Point(437, 638);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(181, 45);
-            this.button1.TabIndex = 40;
-            this.button1.Text = "Submit";
+            this.button1.Size = new System.Drawing.Size(181, 60);
+            this.button1.TabIndex = 53;
+            this.button1.Text = "submit";
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
@@ -257,7 +139,7 @@ namespace cabsystem
             // 
             // q
             // 
-            this.q.Location = new System.Drawing.Point(730, 402);
+            this.q.Location = new System.Drawing.Point(730, 356);
             this.q.Name = "q";
             this.q.Size = new System.Drawing.Size(133, 27);
             this.q.TabIndex = 37;
@@ -267,7 +149,7 @@ namespace cabsystem
             this.label14.AutoSize = true;
             this.label14.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label14.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label14.Location = new System.Drawing.Point(569, 402);
+            this.label14.Location = new System.Drawing.Point(569, 356);
             this.label14.Name = "label14";
             this.label14.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.label14.Size = new System.Drawing.Size(132, 23);
@@ -279,24 +161,12 @@ namespace cabsystem
             this.label13.AutoSize = true;
             this.label13.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label13.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label13.Location = new System.Drawing.Point(569, 264);
+            this.label13.Location = new System.Drawing.Point(569, 201);
             this.label13.Name = "label13";
             this.label13.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.label13.Size = new System.Drawing.Size(144, 23);
+            this.label13.Size = new System.Drawing.Size(81, 23);
             this.label13.TabIndex = 33;
-            this.label13.Text = "Martial Status";
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label12.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label12.Location = new System.Drawing.Point(569, 201);
-            this.label12.Name = "label12";
-            this.label12.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.label12.Size = new System.Drawing.Size(84, 23);
-            this.label12.TabIndex = 29;
-            this.label12.Text = "Gender";
+            this.label13.Text = "gender";
             // 
             // ln
             // 
@@ -331,7 +201,7 @@ namespace cabsystem
             // 
             // age
             // 
-            this.age.Location = new System.Drawing.Point(730, 324);
+            this.age.Location = new System.Drawing.Point(730, 279);
             this.age.Name = "age";
             this.age.Size = new System.Drawing.Size(52, 27);
             this.age.TabIndex = 22;
@@ -341,7 +211,7 @@ namespace cabsystem
             this.label9.AutoSize = true;
             this.label9.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label9.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label9.Location = new System.Drawing.Point(569, 328);
+            this.label9.Location = new System.Drawing.Point(569, 283);
             this.label9.Name = "label9";
             this.label9.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.label9.Size = new System.Drawing.Size(49, 23);
@@ -467,23 +337,17 @@ namespace cabsystem
             this.label1.TabIndex = 2;
             this.label1.Text = "Driver Registration";
             // 
-            // Driverregistration
+            // Form4
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Goldenrod;
-            this.ClientSize = new System.Drawing.Size(1161, 932);
+            this.ClientSize = new System.Drawing.Size(1186, 1035);
             this.Controls.Add(this.panel1);
-            this.Name = "Driverregistration";
+            this.Name = "Form4";
             this.Text = "Form4";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            this.groupBox3.ResumeLayout(false);
-            this.groupBox3.PerformLayout();
-            this.groupBox2.ResumeLayout(false);
-            this.groupBox2.PerformLayout();
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -491,13 +355,25 @@ namespace cabsystem
         #endregion
 
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox fname;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.GroupBox groupBox3;
+        private System.Windows.Forms.RadioButton y;
+        private System.Windows.Forms.RadioButton n;
+        private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.RadioButton m1;
+        private System.Windows.Forms.RadioButton m2;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.RadioButton g1;
+        private System.Windows.Forms.RadioButton g2;
+        private System.Windows.Forms.RadioButton g3;
+        private System.Windows.Forms.TextBox acn;
+        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.TextBox q;
+        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Label label12;
         private System.Windows.Forms.TextBox ln;
         private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.RadioButton n;
-        private System.Windows.Forms.RadioButton y;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.TextBox age;
         private System.Windows.Forms.Label label9;
@@ -510,29 +386,10 @@ namespace cabsystem
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox lname;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox q;
-        private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.RadioButton m2;
-        private System.Windows.Forms.RadioButton m1;
-        private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.RadioButton g3;
-        private System.Windows.Forms.RadioButton g2;
-        private System.Windows.Forms.RadioButton g1;
-        private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.TextBox acn;
-        private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button u1;
-        private System.Windows.Forms.Button b1;
-        private System.Windows.Forms.Label label16;
-        private System.Windows.Forms.Button u3;
-        private System.Windows.Forms.Button b3;
-        private System.Windows.Forms.Button u2;
-        private System.Windows.Forms.Button b2;
-        private System.Windows.Forms.Label label18;
-        private System.Windows.Forms.Label label17;
-        private System.Windows.Forms.GroupBox groupBox3;
-        private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.TextBox fname;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox gender;
+        private System.Windows.Forms.TextBox yesno;
     }
 }
