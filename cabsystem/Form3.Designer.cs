@@ -76,6 +76,7 @@ namespace cabsystem
             this.driver.TabIndex = 2;
             this.driver.Text = "Drivers";
             this.driver.UseVisualStyleBackColor = false;
+            this.driver.Click += new System.EventHandler(this.driver_Click);
             // 
             // cab
             // 
